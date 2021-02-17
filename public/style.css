@@ -1,0 +1,36 @@
+/* #region css-counter */
+.table tbody {
+    counter-reset: myCounter;
+}
+    
+.table tbody tr {
+    counter-increment: myCounter;
+}
+    
+.table tbody tr td:first-child::before {
+    content: counter(myCounter);
+    font-weight: 900;
+}
+    /* #endregion */
+    
+.table th {
+    font-weight: 900;
+}
+    
+.table tr td{
+    word-break: break-all;
+    vertical-align: middle;
+}
+    
+.table .name {
+    max-width: 30vw;
+}
+    
+.table .task-success{
+    background: #20c997;
+}
+    
+.table .task-no-success{
+    background: #ffc107;
+}
+    
